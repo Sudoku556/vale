@@ -1,0 +1,10 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/babi/vale/build/cmake_install.cmake",
+		"/home/babi/vale/build/shared/cmake_install.cmake",
+		"/home/babi/vale/build/wm/cmake_install.cmake",
+		"/home/babi/vale/build/ipc/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

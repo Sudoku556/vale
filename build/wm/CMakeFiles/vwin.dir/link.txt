@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/vwin.dir/link.d CMakeFiles/vwin.dir/src/main.c.o -o vwin  -lxcb-util -lxcb-keysyms -lxcb-icccm -lxcb-ewmh -lxcb -lcairo -lxcb-render -lxcb ../shared/libvale_shared.a -lcairo -lxcb-render

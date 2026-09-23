@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/babi/vale/build/shared",
+  "command": "/usr/bin/cc  -I/home/babi/vale/shared/include -std=gnu11 -o CMakeFiles/vale_shared.dir/src/ipc_proto.c.o -c /home/babi/vale/shared/src/ipc_proto.c",
+  "file": "/home/babi/vale/shared/src/ipc_proto.c",
+  "output": "shared/CMakeFiles/vale_shared.dir/src/ipc_proto.c.o"
+},
+{
+  "directory": "/home/babi/vale/build/wm",
+  "command": "/usr/bin/cc  -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/pixman-1 -I/home/babi/vale/shared/include -std=gnu11 -o CMakeFiles/vwin.dir/src/main.c.o -c /home/babi/vale/wm/src/main.c",
+  "file": "/home/babi/vale/wm/src/main.c",
+  "output": "wm/CMakeFiles/vwin.dir/src/main.c.o"
+},
+{
+  "directory": "/home/babi/vale/build/ipc",
+  "command": "/usr/bin/cc  -I/home/babi/vale/shared/include -std=gnu11 -o CMakeFiles/vale-ipc-test.dir/test_client.c.o -c /home/babi/vale/ipc/test_client.c",
+  "file": "/home/babi/vale/ipc/test_client.c",
+  "output": "ipc/CMakeFiles/vale-ipc-test.dir/test_client.c.o"
+}
+]

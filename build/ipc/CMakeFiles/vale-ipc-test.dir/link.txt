@@ -1,0 +1,1 @@
+/usr/bin/cc -Wl,--dependency-file=CMakeFiles/vale-ipc-test.dir/link.d "CMakeFiles/vale-ipc-test.dir/test_client.c.o" -o vale-ipc-test  ../shared/libvale_shared.a
