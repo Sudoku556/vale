@@ -1,0 +1,33 @@
+pkgname=vale-de
+pkgver=0.1.0
+pkgrel=1
+pkgdesc="Vale — a custom X11 desktop environment (WM: vwin)"
+arch=('x86_64')
+url="https://github.com/yourname/vale"
+license=('MIT')
+depends=('libxcb' 'xcb-util' 'xcb-util-wm' 'xcb-util-keysyms' 'cairo'
+         'tk' 'python' 'xdotool' 'xwallpaper' 'python-cairosvg' 'scrot' 'xorg-xwininfo')
+makedepends=('cmake' 'pkgconf' 'git')
+optdepends=('pulseaudio: volume control via pactl'
+            'pipewire-pulse: volume control via pactl (alternative to pulseaudio)')
+source=("vale::git+https://github.com/Sudoku556/vale.git")
+sha256sums=('SKIP')
+
+build() {
+    cd "$srcdir/vale"
+    mkdir -p build && cd build
+    cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DVALE_SHARE_DIR=/usr/share/vale
+    cmake --build .
+}
+
+package() {
+    cd "$srcdir/vale"
+    install -Dm755 build/wm/vwin "$pkgdir/usr/bin/vwin"
+    install -Dm755 "$srcdir/../vale-session" "$pkgdir/usr/bin/vale-session"
+    install -Dm644 "$srcdir/../vale.desktop" "$pkgdir/usr/share/xsessions/vale.desktop"
+
+    for d in launcher panel settings splash wallpaper; do
+        mkdir -p "$pkgdir/usr/share/vale/$d"
+        cp -r "$d"/* "$pkgdir/usr/share/vale/$d/"
+    done
+}

@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=Vale
+Comment=Vale Desktop Environment
+Exec=/usr/bin/vale-session
+Type=Application
