@@ -1,2 +1,0 @@
-/usr/bin/ar qc libvale_shared.a CMakeFiles/vale_shared.dir/src/ipc_proto.c.o
-/usr/bin/ranlib libvale_shared.a
