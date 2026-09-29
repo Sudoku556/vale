@@ -6,4 +6,5 @@ WM_PID=$!
 sleep 1
 python3 "$SHARE_DIR/wallpaper/vpaper.py" &
 python3 "$SHARE_DIR/panel/vale-panel.py" &
+python3 "$SHARE_DIR/welcome/vale-welcome.py" --first-run &
 wait $WM_PID
