@@ -112,9 +112,6 @@ class VailoWelcome:
             self.show_message()
 
     def finish(self):
-        os.makedirs(os.path.dirname(MARKER), exist_ok=True)
-        with open(MARKER, "w") as f:
-            f.write("1\n")
         self.root.destroy()
 
     def build_browser(self):
@@ -161,8 +158,6 @@ class VailoWelcome:
 
 if __name__ == "__main__":
     first_run = "--first-run" in sys.argv
-    if first_run and os.path.exists(MARKER):
-        sys.exit(0)
     root = tk.Tk()
     VailoWelcome(root, first_run)
     root.mainloop()
