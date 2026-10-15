@@ -5,7 +5,7 @@ Build-In Launcher like Rofi
 Build-In Wallpaper 
 to install vale
 run:
-sudo <Your Package Manager> make git
+sudo <Your Package Manager> install make git
 cd ~
 git clone https://github.com/Sudoku556/vale/
 cd ~/Vale 
